@@ -12,6 +12,7 @@
 		7AE303F721C4375D00136577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AE303F621C4375D00136577 /* Assets.xcassets */; };
 		7AE303FA21C4375D00136577 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE303F821C4375D00136577 /* LaunchScreen.storyboard */; };
 		7AE3040521C43D9C00136577 /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3040421C43D9C00136577 /* InternetDetailViewController.swift */; };
+		7AE3040721C4455300136577 /* InternetMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3040621C4455300136577 /* InternetMasterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		7AE303F921C4375D00136577 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AE303FB21C4375D00136577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7AE3040421C43D9C00136577 /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
+		7AE3040621C4455300136577 /* InternetMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMasterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				7AE3040421C43D9C00136577 /* InternetDetailViewController.swift */,
+				7AE3040621C4455300136577 /* InternetMasterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AE3040521C43D9C00136577 /* InternetDetailViewController.swift in Sources */,
+				7AE3040721C4455300136577 /* InternetMasterViewController.swift in Sources */,
 				7AE303F021C4375500136577 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
