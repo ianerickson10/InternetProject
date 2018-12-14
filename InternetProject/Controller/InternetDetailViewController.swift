@@ -58,11 +58,17 @@ class InternetDetailViewController: UIViewController
     
     private func loadURL(webAddress: String) -> Void
     {
-        
+        let currentURL = URL(string: webAddress)
+        let currentWebRequest = URLRequest(url: currentURL!)
+        webViewer.load(currentWebRequest)
     }
     
     private func loadPDF() -> Void
     {
-        
+        if let content = Bundle.main.url(forResource: "Internet Screen Topics", withExtension: "pdf", subdirectory: nil, localization: nil)
+        {
+            let requestedPDF = NSURLRequest(url: contentPDF)
+            webViewer.load(requestedPDF as URLRequest)
+        }
     }
 }
