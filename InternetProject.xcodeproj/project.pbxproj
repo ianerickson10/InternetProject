@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		7AE303F021C4375500136577 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE303EF21C4375500136577 /* AppDelegate.swift */; };
-		7AE303F221C4375500136577 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE303F121C4375500136577 /* ViewController.swift */; };
 		7AE303F521C4375500136577 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE303F321C4375500136577 /* Main.storyboard */; };
 		7AE303F721C4375D00136577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AE303F621C4375D00136577 /* Assets.xcassets */; };
 		7AE303FA21C4375D00136577 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE303F821C4375D00136577 /* LaunchScreen.storyboard */; };
+		7AE3040521C43D9C00136577 /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3040421C43D9C00136577 /* InternetDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7AE303EC21C4375500136577 /* InternetProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InternetProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AE303EF21C4375500136577 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7AE303F121C4375500136577 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7AE303F421C4375500136577 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7AE303F621C4375D00136577 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AE303F921C4375D00136577 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AE303FB21C4375D00136577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AE3040421C43D9C00136577 /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,38 @@
 		7AE303EE21C4375500136577 /* InternetProject */ = {
 			isa = PBXGroup;
 			children = (
-				7AE303EF21C4375500136577 /* AppDelegate.swift */,
-				7AE303F121C4375500136577 /* ViewController.swift */,
-				7AE303F321C4375500136577 /* Main.storyboard */,
-				7AE303F621C4375D00136577 /* Assets.xcassets */,
-				7AE303F821C4375D00136577 /* LaunchScreen.storyboard */,
-				7AE303FB21C4375D00136577 /* Info.plist */,
+				7AE3040121C437E800136577 /* Resources */,
+				7AE3040221C437F900136577 /* Controller */,
+				7AE3040321C4381B00136577 /* View */,
 			);
 			path = InternetProject;
+			sourceTree = "<group>";
+		};
+		7AE3040121C437E800136577 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7AE303EF21C4375500136577 /* AppDelegate.swift */,
+				7AE303F621C4375D00136577 /* Assets.xcassets */,
+				7AE303FB21C4375D00136577 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7AE3040221C437F900136577 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7AE3040421C43D9C00136577 /* InternetDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7AE3040321C4381B00136577 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7AE303F321C4375500136577 /* Main.storyboard */,
+				7AE303F821C4375D00136577 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AE303F221C4375500136577 /* ViewController.swift in Sources */,
+				7AE3040521C43D9C00136577 /* InternetDetailViewController.swift in Sources */,
 				7AE303F021C4375500136577 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = InternetProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/InternetProject/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +324,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = InternetProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/InternetProject/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
