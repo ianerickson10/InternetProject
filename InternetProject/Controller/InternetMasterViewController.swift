@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InternetMasterViewController: UIViewController
+class InternetMasterViewController: UITableViewController
 {
     private weak var internetDetail : InternetDetailViewController? = nil
     private lazy var internetTopics : [String] = [String]()
