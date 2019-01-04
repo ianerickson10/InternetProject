@@ -11,6 +11,7 @@ import WebKit
 
 class InternetDetailViewController: UIViewController
 {
+
     @IBOutlet weak var webViewer: WKWebView!
     @IBOutlet weak var screenTitle: UILabel!
     
@@ -65,7 +66,7 @@ class InternetDetailViewController: UIViewController
     
     private func loadPDF() -> Void
     {
-        if let content = Bundle.main.url(forResource: "Internet Screen Topics", withExtension: "pdf", subdirectory: nil, localization: nil)
+        if let contentPDF = Bundle.main.url(forResource: "Internet Screen Topics", withExtension: "pdf", subdirectory: nil, localization: nil)
         {
             let requestedPDF = NSURLRequest(url: contentPDF)
             webViewer.load(requestedPDF as URLRequest)
